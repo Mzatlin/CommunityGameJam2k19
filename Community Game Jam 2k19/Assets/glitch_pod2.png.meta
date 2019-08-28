@@ -1,0 +1,1111 @@
+fileFormatVersion: 2
+guid: 243eab78a8ff1f34e956014461bbdee3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3964656907385554135
+    second: glitch_pod2_0
+  - first:
+      213: 1485320203933408029
+    second: glitch_pod2_1
+  - first:
+      213: -5072934284411739402
+    second: glitch_pod2_2
+  - first:
+      213: 7703519931900769817
+    second: glitch_pod2_3
+  - first:
+      213: 5410325027035756461
+    second: glitch_pod2_4
+  - first:
+      213: -434513987168876119
+    second: glitch_pod2_5
+  - first:
+      213: -9203413883663649778
+    second: glitch_pod2_6
+  - first:
+      213: -6434759427965279411
+    second: glitch_pod2_7
+  - first:
+      213: 7975295567370911588
+    second: glitch_pod2_8
+  - first:
+      213: 6519926365016348744
+    second: glitch_pod2_9
+  - first:
+      213: -5098268520729653511
+    second: glitch_pod2_10
+  - first:
+      213: -7812378013109184595
+    second: glitch_pod2_11
+  - first:
+      213: -1261216041232120911
+    second: glitch_pod2_12
+  - first:
+      213: -1120664224574382458
+    second: glitch_pod2_13
+  - first:
+      213: 7449256359593780650
+    second: glitch_pod2_14
+  - first:
+      213: -5947739451338831437
+    second: glitch_pod2_15
+  - first:
+      213: -3821533202932804577
+    second: glitch_pod2_16
+  - first:
+      213: 8678927530125470706
+    second: glitch_pod2_17
+  - first:
+      213: 8383262588368471548
+    second: glitch_pod2_18
+  - first:
+      213: 14516598849626951
+    second: glitch_pod2_19
+  - first:
+      213: 4727476736960889415
+    second: glitch_pod2_20
+  - first:
+      213: -7497887357256964358
+    second: glitch_pod2_21
+  - first:
+      213: 3720552776087031249
+    second: glitch_pod2_22
+  - first:
+      213: 1704483590976682976
+    second: glitch_pod2_23
+  - first:
+      213: -7792030521977933765
+    second: glitch_pod2_24
+  - first:
+      213: -9172388286701611026
+    second: glitch_pod2_25
+  - first:
+      213: -8720101941305997157
+    second: glitch_pod2_26
+  - first:
+      213: -9013737446589919977
+    second: glitch_pod2_27
+  - first:
+      213: 3664534944277254620
+    second: glitch_pod2_28
+  - first:
+      213: 1464503716224448200
+    second: glitch_pod2_29
+  - first:
+      213: -5339036210328725684
+    second: glitch_pod2_30
+  - first:
+      213: 2210487901609426545
+    second: glitch_pod2_31
+  - first:
+      213: 2968000509730989416
+    second: glitch_pod2_32
+  - first:
+      213: 2959839445798999913
+    second: glitch_pod2_33
+  - first:
+      213: -3155144869092861196
+    second: glitch_pod2_34
+  - first:
+      213: 8750537062336381503
+    second: glitch_pod2_35
+  - first:
+      213: 5533010962682752284
+    second: glitch_pod2_36
+  - first:
+      213: 5390885299870189384
+    second: glitch_pod2_37
+  - first:
+      213: -7044847584090961027
+    second: glitch_pod2_38
+  - first:
+      213: 8900818590903559188
+    second: glitch_pod2_39
+  - first:
+      213: -4109210385714279819
+    second: glitch_pod2_40
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: glitch_pod2_0
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 0
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448e39eec3997cf489ffdf0f13e8caf4
+      internalID: -3964656907385554135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_1
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 0
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d5a4cc174feb94cba3740b8bd81ebb
+      internalID: 1485320203933408029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_2
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 0
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f3a48969106bd4c9efd4291b61083c
+      internalID: -5072934284411739402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_3
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ddf3ee261178947b19b166e613c7e1
+      internalID: 7703519931900769817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_4
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 0
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e91a3ec683e34640a1c2f2c0e11dc7c
+      internalID: 5410325027035756461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_5
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 64
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97a5fede264ed14091a83f615be6bf1
+      internalID: -434513987168876119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_6
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 64
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ddbc38f71dba6478b8e519fb4c9f4c
+      internalID: -9203413883663649778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_7
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 0
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afd186fcc2631147a7e4c23ff97f0d9
+      internalID: -6434759427965279411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_8
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 29
+        width: 53
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b704b4c85deb759458f074824367a85d
+      internalID: 7975295567370911588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_9
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 18
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6ecceba67a874459f3a8fbbaa2b71f
+      internalID: 6519926365016348744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_10
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 0
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2220626ad2400a349ab9f0e2e1281974
+      internalID: -5098268520729653511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_11
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 0
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ba70d551c74aa4a95e719d90ab6637
+      internalID: -7812378013109184595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_12
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 56
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3081f30e06620d144813d3cd371fe6d7
+      internalID: -1261216041232120911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_13
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df4175768fc0a046b3f4640926f25fe
+      internalID: -1120664224574382458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a413aa94b7aa0794886b5f8ffeffcafc
+      internalID: 7449256359593780650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_15
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96c5eaabb567504e8c5c6eeb6cdce8e
+      internalID: -5947739451338831437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_16
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1877628ca37e974e93b9ef68ce2c927
+      internalID: -3821533202932804577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_17
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 16
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8449421b666a112428518c5a53f1e1ec
+      internalID: 8678927530125470706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_18
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738ebfd45b9716d4ea803f5c98c25f3c
+      internalID: 8383262588368471548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_19
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5db8a622b85b046bbfd854b0d93860
+      internalID: 14516598849626951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_20
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 3
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8cb00665fd9db46958adb12e09294c
+      internalID: 4727476736960889415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_21
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 42
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe665c00af890e547922b8da16b14875
+      internalID: -7497887357256964358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_22
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 40
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ca1f00231ffd74e8efa9a002b641c4
+      internalID: 3720552776087031249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_23
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 36
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef14b033f5ec084a8166891c6aab0a4
+      internalID: 1704483590976682976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_24
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 39
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6fde84fad08144bad2577a2d8fe2a4
+      internalID: -7792030521977933765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_25
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 40
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b539df7e2ecba244aa2da1c6b3d9c1a8
+      internalID: -9172388286701611026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_26
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 26
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ddf68e4f0fdef439f26578f99a9c63
+      internalID: -8720101941305997157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_27
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 26
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8463c8aff556647a292fc230b6385f
+      internalID: -9013737446589919977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_28
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 27
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7de30cdbf6ed6e4391462dfe1c9128e
+      internalID: 3664534944277254620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_29
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 28
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4790c86c94d3920418a92bc01a05286c
+      internalID: 1464503716224448200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_30
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 19
+        width: 41
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570edb0f91803b2458c00910c596f88a
+      internalID: -5339036210328725684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_31
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 11
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e64595d54b2064c96b8dd2895d9776
+      internalID: 2210487901609426545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_32
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99de5d72ff4c49f4f880f15932cc026b
+      internalID: 2968000509730989416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_33
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 2
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4831361d5aded05439dfd6293759f413
+      internalID: 2959839445798999913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_34
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 2
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b258abee3f1b90458fb95e068f4bf6e
+      internalID: -3155144869092861196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_35
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12677a590b6d0647b097e0a578d5569
+      internalID: 8750537062336381503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_36
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba5fa3a209a2a347af38d61725c729e
+      internalID: 5533010962682752284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_37
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 11
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4320f4046c2a14f448ee913a0ac147c2
+      internalID: 5390885299870189384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_38
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251ff10c3b8c23c4e9d819312b354698
+      internalID: -7044847584090961027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_39
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 2
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5e65070650e1c4889a458b896ebacf
+      internalID: 8900818590903559188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch_pod2_40
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 0
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f82fcd2b2aa14f48b97067387edeae7
+      internalID: -4109210385714279819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

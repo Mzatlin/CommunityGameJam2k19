@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 public class LoadingBarFill : MonoBehaviour
 {
     public Slider slider;
+    public LoadingBarValue loadValue;
     private Slider fill;
     public Text text;
+    public bool isActive;
     [SerializeField]
     private float progress;
     // Start is called before the first frame update
@@ -18,21 +20,28 @@ public class LoadingBarFill : MonoBehaviour
 
         }
 
+        loadValue.Value = 0f;
+        loadValue.isActive = true;
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        progress += 0.001f;
-        progress = Mathf.Clamp(progress, 0f, .1f);
-        slider.value = progress;
-        text.text = (int)(progress * 100) + "%";
-        if (progress >= .1)
+        if (loadValue.isActive)
         {
-            slider.image.color = Color.red;
+            slider.image.color = Color.green;
+            loadValue.Value += 0.001f;
+            loadValue.Value = Mathf.Clamp(loadValue.Value, 0f, 1f);
+            slider.value = loadValue.Value;
+            text.text = (int)(loadValue.Value * 100) + "%";
+            if (loadValue.Value >= .1 && loadValue.Value <=.101)
+            {
+                slider.image.color = Color.red;
+                loadValue.isActive = false;
+            }
         }
-
-        if (progress >= 1)
+        if (loadValue.Value >= 1)
         {
             SceneManager.LoadScene("Ending Scene", LoadSceneMode.Single);
         }

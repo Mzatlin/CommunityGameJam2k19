@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
-    private float playerMove;
+    public float playerMove;
     public Animator playerAnimator;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
