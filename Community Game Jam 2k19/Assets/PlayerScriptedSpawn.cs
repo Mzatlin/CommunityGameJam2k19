@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerScriptedSpawn : MonoBehaviour
 {
     public LoadingBarValue loadbar;
+    public CmdPromptObject prompt;
     public GameObject player;
+    public PlayerObject playerobject;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +15,7 @@ public class PlayerScriptedSpawn : MonoBehaviour
         {
             loadbar.Value = 0;
         }
-        player.SetActive(false);
+        player.SetActive(true);
     }
 
     // Update is called once per frame
@@ -21,7 +23,10 @@ public class PlayerScriptedSpawn : MonoBehaviour
     {
         if(loadbar.Value >= 0.1f)
         {
-            player.SetActive(true);
+       //     player.SetActive(true); //This will bite me in the ass later 
+            prompt.EnqueueText("Spawing Player");
+            playerobject.isDead = false;
+
         }
     }
 }

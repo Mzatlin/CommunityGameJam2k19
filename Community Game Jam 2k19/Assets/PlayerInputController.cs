@@ -5,9 +5,12 @@ using UnityEngine;
 public class PlayerInputController : MonoBehaviour
 {
     public float playerMove;
+    public PlayerObject player;
     public Animator playerAnimator;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
+    private Vector3 playerScale;
+    private bool isFlipped;
     [SerializeField]
     private float playerSpeed = 10;
     // Start is called before the first frame update
@@ -21,20 +24,28 @@ public class PlayerInputController : MonoBehaviour
     void FixedUpdate()
     {
         playerMove = Input.GetAxis("Horizontal") * playerSpeed;
-        FlipSprite(playerMove);
         playerAnimator.SetFloat("Speed", Mathf.Abs(playerMove));
-        rb.velocity = new Vector2(playerMove, rb.velocity.y);
+        if (!isFlipped && playerMove > 0)
+        {
+            FlipSprite();
+        }
+        else if (isFlipped && playerMove < 0)
+        {
+            FlipSprite();
+        }
+        if (!player.isDead)
+        {
+            rb.velocity = new Vector2(playerMove, rb.velocity.y);
+        }
+
+
 
     }
-    void FlipSprite(float direction)
+    void FlipSprite()
     {
-        if (direction > 0)
-        {
-            sprite.flipX = true;
-        }
-        else
-        {
-            sprite.flipX = false;
-        }
+        isFlipped = !isFlipped;
+        playerScale = transform.localScale;
+        playerScale.x *= -1;
+        transform.localScale = playerScale;
     }
 }

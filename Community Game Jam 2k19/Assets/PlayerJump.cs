@@ -6,6 +6,7 @@ public class PlayerJump : MonoBehaviour
 {
     //private Vector2 playerMove;
     private Rigidbody2D rb;
+    public CmdPromptObject prompt;
     Animator jumpAnimator;
     [SerializeField]
     private float jumpHeight = 5f;
@@ -25,7 +26,8 @@ public class PlayerJump : MonoBehaviour
           //  {
              //   Debug.Log("Jump");
            //     rb.velocity += Vector2.up * 10f * Physics2D.gravity.y; //Time.deltaTime;// * Time.fixedDeltaTime; //
-                rb.AddForce(Vector2.up *Time.fixedDeltaTime* jumpHeight, ForceMode2D.Impulse);
+                rb.AddForce(Vector2.up * Time.fixedDeltaTime * jumpHeight, ForceMode2D.Impulse);
+              //  prompt.EnqueueText("Jump!");
                 isJumping = true;
           //  }
         }
