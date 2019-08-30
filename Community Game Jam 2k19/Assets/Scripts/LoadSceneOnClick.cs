@@ -4,8 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneOnClick : MonoBehaviour
 {
+    [SerializeField]
+    string sceneName;
     public void OnClick()
     {
-        SceneManager.LoadScene("Loading Scene",LoadSceneMode.Single);
+        SceneManager.LoadScene(sceneName,LoadSceneMode.Single);
     }
 }

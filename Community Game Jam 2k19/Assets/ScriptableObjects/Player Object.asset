@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b273144fc86e54e4c8590ccdf0f14451, type: 3}
-  m_Name: Loading Bar Value
+  m_Script: {fileID: 11500000, guid: 48d0576f1963878468d41f0817e25534, type: 3}
+  m_Name: Player Object
   m_EditorClassIdentifier: 
-  Value: 0.1
-  Color: {r: 0.3803922, g: 0.3803922, b: 0.3803922, a: 0}
+  isStopped: 0
+  isDead: 0
+  isHacking: 0

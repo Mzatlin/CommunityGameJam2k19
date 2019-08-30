@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d0576f1963878468d41f0817e25534, type: 3}
-  m_Name: Player Object
+  m_Script: {fileID: 11500000, guid: cc6c8a68492bfc2439b6e2fbf0fb34f8, type: 3}
+  m_Name: Cmd Prompt Object
   m_EditorClassIdentifier: 
-  moveVector: {x: 0, y: 0}
-  isDead: 0
+  size: 3
+  textContent: Spawning In Player
