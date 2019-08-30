@@ -5,14 +5,16 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public Animator playerAnimator;
+    public PlayerObject player;
     [SerializeField]
     GameObject attackCenter;
     [SerializeField]
-    float attackRadius;
+    float attackRadius = 0.5f;
     [SerializeField]
     LayerMask layerToAttack;
     IHealth health;
     Collider2D[] objectsToHit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +24,10 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !player.isStopped && !player.isHacking)
         {
-            playerAnimator.SetBool("IsAttacking", true);
+            playerAnimator.Play("Player_Attack");
+            player.isStopped = true;
             objectsToHit = Physics2D.OverlapCircleAll(attackCenter.transform.position,attackRadius,layerToAttack);
             foreach(var item in objectsToHit)
             {
@@ -33,13 +36,14 @@ public class PlayerAttack : MonoBehaviour
                 {
                     item.GetComponent<IHealth>().InputDamage(1);
                 }
+
             }
-
+            StartCoroutine(PausePlayer());
         }
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            playerAnimator.SetBool("IsAttacking", false);
-        }
-
+    }
+    IEnumerator PausePlayer()
+    {
+        yield return new WaitForSeconds(.1f);
+        player.isStopped = false;
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerObject : ScriptableObject
 {
-    public Vector2 moveVector;
+    public bool isStopped;
     public bool isDead;
+    public bool isHacking;
 }

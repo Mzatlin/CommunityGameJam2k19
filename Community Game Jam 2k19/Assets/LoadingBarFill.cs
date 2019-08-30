@@ -35,11 +35,10 @@ public class LoadingBarFill : MonoBehaviour
             loadValue.Value = Mathf.Clamp(loadValue.Value, 0f, 1f);
             slider.value = loadValue.Value;
             text.text = (int)(loadValue.Value * 100) + "%";
-            if (loadValue.Value >= .1 && loadValue.Value <=.101)
-            {
-                slider.image.color = Color.red;
-                loadValue.isActive = false;
-            }
+        }
+        else
+        {
+            slider.image.color = Color.red;
         }
         if (loadValue.Value >= 1)
         {

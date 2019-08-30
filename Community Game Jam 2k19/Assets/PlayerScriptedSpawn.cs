@@ -11,22 +11,26 @@ public class PlayerScriptedSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       if(loadbar.Value > 0)
+        prompt.CmdSetText("Warning! Fatal Error!");
+        prompt.CmdSetText("Spawning In Player");
+        if (loadbar.Value > 0)
         {
             loadbar.Value = 0;
         }
         player.SetActive(true);
+        playerobject.isStopped = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(loadbar.Value >= 0.1f)
-        {
+  //      if(loadbar.Value >= 0.1f)
+//        {
        //     player.SetActive(true); //This will bite me in the ass later 
-            prompt.EnqueueText("Spawing Player");
-            playerobject.isDead = false;
+    //        prompt.EnqueueText("Spawing Player");
+   //         playerobject.isDead = false;
 
-        }
+
+   //     }
     }
 }

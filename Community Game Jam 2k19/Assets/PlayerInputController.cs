@@ -25,15 +25,19 @@ public class PlayerInputController : MonoBehaviour
     {
         playerMove = Input.GetAxis("Horizontal") * playerSpeed;
         playerAnimator.SetFloat("Speed", Mathf.Abs(playerMove));
-        if (!isFlipped && playerMove > 0)
+        if (!isFlipped && playerMove > 0 && !player.isStopped)
         {
             FlipSprite();
         }
-        else if (isFlipped && playerMove < 0)
+        else if (isFlipped && playerMove < 0 && !player.isStopped)
         {
             FlipSprite();
         }
-        if (!player.isDead)
+        if (player.isStopped)
+        {
+            rb.velocity = Vector2.zero;
+        }
+        else
         {
             rb.velocity = new Vector2(playerMove, rb.velocity.y);
         }
@@ -43,9 +47,9 @@ public class PlayerInputController : MonoBehaviour
     }
     void FlipSprite()
     {
-        isFlipped = !isFlipped;
         playerScale = transform.localScale;
         playerScale.x *= -1;
         transform.localScale = playerScale;
+        isFlipped = !isFlipped;
     }
 }

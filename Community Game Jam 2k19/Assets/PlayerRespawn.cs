@@ -7,6 +7,7 @@ public class PlayerRespawn : MonoBehaviour
 {
     public GameObject spawnLocation;
     public PlayerObject player;
+    public Animator playerAnimator;
     public SpriteRenderer sprite;
     HealthController health;
     PlayerDie despawn;
@@ -23,10 +24,11 @@ public class PlayerRespawn : MonoBehaviour
     }
     IEnumerator Respawn()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         gameObject.SetActive(true);
+        player.isStopped = false;
         player.isDead = false;
-        Debug.Log("Respawning");
+        playerAnimator.SetBool("IsDead", false);
         transform.position = spawnLocation.transform.position;
         health.IsDead = false;
         sprite.enabled = true;

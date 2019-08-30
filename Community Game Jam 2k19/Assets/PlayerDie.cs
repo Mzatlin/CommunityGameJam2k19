@@ -6,7 +6,9 @@ using System;
 public class PlayerDie : MonoBehaviour
 {
     public event Action OnDespawn = delegate { };
+    public CmdPromptObject prompt;
     public SpriteRenderer sprite;
+    public GameObject spawnLocation;
     HealthController health;
     public PlayerObject player;
     public Animator playerAnimator;
@@ -20,15 +22,25 @@ public class PlayerDie : MonoBehaviour
     {
         playerAnimator.SetBool("IsDead", true);
         player.isDead = true;
+        player.isStopped = true;
+        prompt.CmdSetText("Player died. Spawning Another");
         StartCoroutine(Despawn());
 
     }
     IEnumerator Despawn()
     {
-        yield return new WaitForSeconds(1f);
+      
+        
+    //  gameObject.SetActive(false);
+       // sprite.enabled = false;
+        yield return new WaitForSeconds(3f);
         OnDespawn();
-        gameObject.SetActive(false);
-        sprite.enabled = false;
-    
+        /*   //   sprite.enabled = true;
+           Debug.Log("Respawning");
+           playerAnimator.SetBool("IsDead", false);
+           transform.position = spawnLocation.transform.position;
+           player.isDead = false;
+           health.IsDead = false;
+           */
     }
 }

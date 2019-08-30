@@ -25,9 +25,9 @@ public class PlayerInteract : MonoBehaviour
         {
             lastDirection = player.playerMove;
         }
-        Debug.DrawRay(lookRay.origin, lookRay.direction, Color.red, 10f);
+        Debug.DrawRay(lookRay.origin, lookRay.direction, Color.red, 0.3f);
 
-        hit = Physics2D.Raycast(lookRay.origin, lookRay.direction, 3f, LayerMask.GetMask("Terminal"));
+        hit = Physics2D.Raycast(lookRay.origin, lookRay.direction, 0.3f, LayerMask.GetMask("Terminal"));
     
         if (hit != false)
         {
