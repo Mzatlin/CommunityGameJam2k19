@@ -6,6 +6,8 @@ public class PlayerAttack : MonoBehaviour
 {
     public Animator playerAnimator;
     public PlayerObject player;
+    public AudioSource attackAudio;
+    public AudioClip audioClipAttack;
     [SerializeField]
     GameObject attackCenter;
     [SerializeField]
@@ -14,20 +16,22 @@ public class PlayerAttack : MonoBehaviour
     LayerMask layerToAttack;
     IHealth health;
     Collider2D[] objectsToHit;
+    bool isDelayed = false;
 
-    // Start is called before the first frame update
     void Start()
     {
+        
 
     }
-
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E) && !player.isStopped && !player.isHacking)
+        if (Input.GetKeyDown(KeyCode.E) && !player.isStopped && !player.isHacking && !isDelayed)
         {
+            attackAudio.clip = audioClipAttack;
             playerAnimator.Play("Player_Attack");
+            attackAudio.Play();
             player.isStopped = true;
             objectsToHit = Physics2D.OverlapCircleAll(attackCenter.transform.position,attackRadius,layerToAttack);
             foreach(var item in objectsToHit)
@@ -43,7 +47,9 @@ public class PlayerAttack : MonoBehaviour
     }
     IEnumerator PausePlayer()
     {
-        yield return new WaitForSeconds(.1f);
+        isDelayed = true;
+        yield return new WaitForSeconds(.18f);
         player.isStopped = false;
+        isDelayed = false;
     }
 }

@@ -15,7 +15,7 @@ public class EnemySpawner : SpawnerBase
 
     void OnEnable()
     {
-        InvokeRepeating("Spawn", enemyWave.enemySpeed, enemyWave.difficulty);
+        InvokeRepeating("Spawn", Random.Range(enemyWave.enemySpeed, enemyWave.enemySpeed+3), Random.Range(enemyWave.difficulty,enemyWave.difficulty+3));
     }
 
 

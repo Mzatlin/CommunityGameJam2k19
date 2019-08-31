@@ -7,6 +7,8 @@ public class CmdPromptController : MonoBehaviour
 {
     [SerializeField]
     CmdPromptObject prompt;
+    public AudioSource cmdSource;
+    public AudioClip cmdClip;
     [SerializeField]
     List<Text> cmdTextList = new List<Text>();
     int index = 0;
@@ -14,6 +16,7 @@ public class CmdPromptController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cmdSource.clip = cmdClip;
         prompt.OnTextChange += HandleEnqueue;
     }
 
@@ -21,6 +24,7 @@ public class CmdPromptController : MonoBehaviour
 
     void HandleEnqueue()
     {
+        cmdSource.Play();
         index = Mathf.Clamp(index, 0, 4);
 
         if (index > prompt.size-1)

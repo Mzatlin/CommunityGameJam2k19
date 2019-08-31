@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fc4611450e6a894099fb81623f12ea1, type: 3}
   m_Name: Enemy Wave Object
   m_EditorClassIdentifier: 
-  enemySpeed: 4
-  difficulty: 5
+  enemySpeed: 3
+  difficulty: 3

@@ -11,11 +11,14 @@ public class PlayerRespawn : MonoBehaviour
     public SpriteRenderer sprite;
     HealthController health;
     PlayerDie despawn;
+    public AudioSource spawnSound;
+    public AudioClip spawnClip;
     void Start()
     {
         health = GetComponent<HealthController>();
         despawn = GetComponent<PlayerDie>();
-        despawn.OnDespawn += HandleDespawn; 
+        despawn.OnDespawn += HandleDespawn;
+
     }
 
     void HandleDespawn()
@@ -26,6 +29,9 @@ public class PlayerRespawn : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         gameObject.SetActive(true);
+        spawnSound.clip = spawnClip;
+        spawnSound.Play();
+        sprite.enabled = true;
         player.isStopped = false;
         player.isDead = false;
         playerAnimator.SetBool("IsDead", false);

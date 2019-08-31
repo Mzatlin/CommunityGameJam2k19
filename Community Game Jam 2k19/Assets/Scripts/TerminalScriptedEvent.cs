@@ -19,7 +19,7 @@ public class TerminalScriptedEvent : MonoBehaviour
     {
         if(load.Value >= 0.1)
         {
-            manager.terminals[0].SetActive(true);
+   //         manager.terminals[0].SetActive(true);
         }
     }
 }

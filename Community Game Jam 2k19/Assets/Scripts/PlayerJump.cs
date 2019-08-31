@@ -11,6 +11,8 @@ public class PlayerJump : MonoBehaviour
     public PlayerObject player;
     bool isgrounded = true;
     Animator jumpAnimator;
+    public AudioSource jumpSource;
+    public AudioClip jumpClip;
     [SerializeField]
     LayerMask mask;
     [SerializeField]
@@ -41,6 +43,8 @@ public class PlayerJump : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) && !player.isStopped && isgrounded)
         {
+            jumpSource.clip = jumpClip;
+            jumpSource.Play();
           //  if(rb.velocity.y >= 0)
           //  {
              //   Debug.Log("Jump");

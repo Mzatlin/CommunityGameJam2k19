@@ -12,6 +12,8 @@ public class PlayerDie : MonoBehaviour
     HealthController health;
     public PlayerObject player;
     public Animator playerAnimator;
+    public AudioSource deathSource;
+    public AudioClip deathClip;
     void Start()
     {
         health = GetComponent<HealthController>();
@@ -20,20 +22,23 @@ public class PlayerDie : MonoBehaviour
 
     void HandleDeath()
     {
+        deathSource.clip = deathClip;
+        deathSource.Play();
         playerAnimator.SetBool("IsDead", true);
         player.isDead = true;
         player.isStopped = true;
-        prompt.CmdSetText("Player died. Spawning Another");
+        prompt.CmdSetText("Player Terminated. Spawning Another");
         StartCoroutine(Despawn());
 
     }
     IEnumerator Despawn()
     {
-      
-        
-    //  gameObject.SetActive(false);
-       // sprite.enabled = false;
-        yield return new WaitForSeconds(3f);
+
+
+        //  gameObject.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        sprite.enabled = false;
+        yield return new WaitForSeconds(1.5f);
         OnDespawn();
         /*   //   sprite.enabled = true;
            Debug.Log("Respawning");

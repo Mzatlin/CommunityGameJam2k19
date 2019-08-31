@@ -19,7 +19,7 @@ public class LoadingBarFill : MonoBehaviour
             Debug.LogError("No Slider is referenced!");
 
         }
-
+        Time.timeScale = 1;
         loadValue.Value = 0f;
         loadValue.isActive = true;
         loadValue.isSlow = false;
