@@ -6,11 +6,19 @@ public class PlayerJump : MonoBehaviour
 {
     //private Vector2 playerMove;
     private Rigidbody2D rb;
+    [SerializeField]
+    Animator jumpAnimation;
     public PlayerObject player;
+    bool isgrounded = true;
     Animator jumpAnimator;
     [SerializeField]
-    private float jumpHeight = 5f;
+    LayerMask mask;
+    [SerializeField]
+    private float jumpHeight = 4f;
     public bool isJumping = false;
+    Ray2D ray;
+
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -18,16 +26,29 @@ public class PlayerJump : MonoBehaviour
     }
 
     // Update is called once per frame
+
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !player.isStopped)
+        if (!isgrounded)
+        {
+            Debug.DrawLine(transform.position, -transform.up);
+            if (Physics2D.Raycast(transform.position, -transform.up, 1.5f, LayerMask.GetMask("Floor")))
+            {
+                isgrounded = true;
+                isJumping = false;
+               // jumpAnimation.SetBool("IsJumping", false);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && !player.isStopped && isgrounded)
         {
           //  if(rb.velocity.y >= 0)
           //  {
              //   Debug.Log("Jump");
            //     rb.velocity += Vector2.up * 10f * Physics2D.gravity.y; //Time.deltaTime;// * Time.fixedDeltaTime; //
-                rb.AddForce(Vector2.up * Time.fixedDeltaTime * jumpHeight, ForceMode2D.Impulse);
+                rb.AddForce(Vector2.up *Time.fixedDeltaTime * jumpHeight, ForceMode2D.Impulse);
                 isJumping = true;
+                isgrounded = false;
+             //   jumpAnimation.SetBool("IsJumping", true);
           //  }
         }
         if (player.isStopped)

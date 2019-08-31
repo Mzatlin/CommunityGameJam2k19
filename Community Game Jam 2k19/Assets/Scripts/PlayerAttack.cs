@@ -24,6 +24,7 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.E) && !player.isStopped && !player.isHacking)
         {
             playerAnimator.Play("Player_Attack");
@@ -36,7 +37,6 @@ public class PlayerAttack : MonoBehaviour
                 {
                     item.GetComponent<IHealth>().InputDamage(1);
                 }
-
             }
             StartCoroutine(PausePlayer());
         }

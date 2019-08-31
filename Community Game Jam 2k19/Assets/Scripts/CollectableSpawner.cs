@@ -43,7 +43,7 @@ public class CollectableSpawner : SpawnerBase
         if (isActive)
         {
 
-            if (objectCount == 0)
+            if (objectCount <= 0)
             {
                 load.isSlow = false;
                 load.tickRate = 0.001f;
@@ -80,8 +80,6 @@ public class CollectableSpawner : SpawnerBase
         }
 
         cmd.CmdSetText("Garbage is Slowing Us Down!");
-
-
 
     }
     //0.0001f for the "slowdown" effect

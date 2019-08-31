@@ -11,10 +11,10 @@ public class ItemCollect : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         player = collision.GetComponent<PlayerInputController>();
-        if(player != null)
+        if(player != null && gameObject.activeInHierarchy)
         {
-            OnCollected();
             gameObject.SetActive(false);
+            OnCollected();
         }
     }
 }
