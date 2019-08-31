@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8386424b93f714842a4f44a9f5a905f5, type: 3}
   m_Name: Interruption Object
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   difficulty: 3

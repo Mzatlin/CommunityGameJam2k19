@@ -34,26 +34,27 @@ public class ActivateCountDown : MonoBehaviour
     {
         timer.isCountDown = true;
         timer.countDownTime = 10;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         timer.countDownTime = 9;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         timer.countDownTime = 8;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         timer.countDownTime = 7;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         timer.countDownTime = 6;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         timer.countDownTime = 5;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         timer.countDownTime = 4;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         timer.countDownTime = 3;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         timer.countDownTime = 2;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         timer.countDownTime = 1;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         timer.countDownTime = 0;
+        yield return new WaitForSeconds(1.3f);
         timer.isFailure = true;
         OnFailure();
 

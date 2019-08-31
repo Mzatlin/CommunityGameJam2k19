@@ -10,6 +10,8 @@ public class LoadingBarScriptedStops : MonoBehaviour
     public PlayerObject playerobject;
     public AudioSource spawnSound;
     public AudioClip spawnClip;
+    public AudioClip deactivated;
+    public AudioSource deativateSource;
     public GameObject terminal;
     int count = 0;
     // Start is called before the first frame update
@@ -26,6 +28,8 @@ public class LoadingBarScriptedStops : MonoBehaviour
             load.isActive = false;
             if(count < 1)
             {
+                deativateSource.clip = deactivated;
+                deativateSource.Play();
                 count++;
                 StartCoroutine(ScriptedSpawns());
             }
@@ -34,14 +38,22 @@ public class LoadingBarScriptedStops : MonoBehaviour
     }
     IEnumerator ScriptedSpawns()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         prompt.CmdSetText("Loading Error Detected.");
-
-        spawnSound.clip = spawnClip;
+        yield return new WaitForSeconds(2f);
+        prompt.CmdSetText("Activating Repair Drone");
+        yield return new WaitForSeconds(.5f);
+        prompt.CmdSetText("...");
+        yield return new WaitForSeconds(.5f);
+        prompt.CmdSetText("...");
+        yield return new WaitForSeconds(.5f);
+        prompt.CmdSetText("Repair Drone Activated");
         player.SetActive(true);
         spawnSound.Play();
         playerobject.isStopped = false;
         playerobject.isHacking = false;
+        playerobject.isDead = false;
+
         terminal.SetActive(true);
     }
 }

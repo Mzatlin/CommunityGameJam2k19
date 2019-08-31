@@ -6,5 +6,5 @@ using UnityEngine;
 public class InterruptionObject : ScriptableObject
 {
     public float speed;
-    public int difficulty;
+    public float difficulty;
 }

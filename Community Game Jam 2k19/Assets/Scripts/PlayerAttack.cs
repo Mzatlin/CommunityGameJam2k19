@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     public PlayerObject player;
     public AudioSource attackAudio;
     public AudioClip audioClipAttack;
+    public AudioClip hitClip;
     [SerializeField]
     GameObject attackCenter;
     [SerializeField]
@@ -39,7 +40,10 @@ public class PlayerAttack : MonoBehaviour
                 health = item.GetComponent<IHealth>();
                 if(health != null)
                 {
+                    attackAudio.clip = hitClip;
+                    attackAudio.Play();
                     item.GetComponent<IHealth>().InputDamage(1);
+
                 }
             }
             StartCoroutine(PausePlayer());

@@ -14,7 +14,7 @@ public class CollectableSpawner : SpawnerBase
     HealthController health;
     ItemCollect collect;
     [SerializeField]
-    int objectCount = 0;
+    float objectCount = 0;
     // Start is called before the first frame update
 
  
@@ -22,7 +22,7 @@ public class CollectableSpawner : SpawnerBase
     {
         objectCount = interruption.difficulty;
         SetUpEnemies();
-        Invoke("Spawn", interruption.speed);
+        Invoke("Spawn", Random.Range(interruption.speed,interruption.speed+3));
     }
     void OnDisable()
     {

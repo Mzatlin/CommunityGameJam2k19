@@ -63,11 +63,6 @@ public class EnemySpawner : SpawnerBase
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
 
 }
