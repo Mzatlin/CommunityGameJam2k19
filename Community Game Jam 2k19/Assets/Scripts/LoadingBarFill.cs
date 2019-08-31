@@ -23,7 +23,7 @@ public class LoadingBarFill : MonoBehaviour
         loadValue.Value = 0f;
         loadValue.isActive = true;
         loadValue.isSlow = false;
-        loadValue.tickRate = 0.001f;
+        loadValue.tickRate = 0.0005f;
         loadValue.Color = Color.green;
     }
 
@@ -33,14 +33,6 @@ public class LoadingBarFill : MonoBehaviour
         if (loadValue.isActive)
         {
             slider.image.color = loadValue.Color;
-          /*  if (loadValue.isSlow)
-            {
-                slider.image.color = Color.yellow;
-            }
-            else
-            {
-                slider.image.color = Color.green;
-            }*/
             loadValue.Value += loadValue.tickRate;
             loadValue.Value = Mathf.Clamp(loadValue.Value, 0f, 1f);
             slider.value = loadValue.Value;

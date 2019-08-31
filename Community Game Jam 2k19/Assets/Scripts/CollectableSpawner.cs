@@ -46,7 +46,7 @@ public class CollectableSpawner : SpawnerBase
             if (objectCount <= 0)
             {
                 load.isSlow = false;
-                load.tickRate = 0.001f;
+                load.tickRate = 0.0005f;
                 cmd.CmdSetText("Garbage Clear!");
                 load.Activate();
                 isActive = false;

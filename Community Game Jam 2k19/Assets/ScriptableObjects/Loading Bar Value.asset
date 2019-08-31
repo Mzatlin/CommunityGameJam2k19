@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b273144fc86e54e4c8590ccdf0f14451, type: 3}
   m_Name: Loading Bar Value
   m_EditorClassIdentifier: 
-  Value: 0.100000024
-  Color: {r: 0.3803922, g: 0.3803922, b: 0.3803922, a: 0}
+  Value: 0.2384988
+  Color: {r: 0, g: 1, b: 0, a: 1}
+  isSlow: 0
   isActive: 0
-  tickRate: 0.001
+  tickRate: 0.0005
