@@ -13,6 +13,7 @@ public class PlayerScriptedSpawn : MonoBehaviour
     {
         prompt.CmdSetText("Warning! Fatal Error!");
         prompt.CmdSetText("Spawning In Player");
+        prompt.CmdSetText("Hack into the Terminal!");
         if (loadbar.Value > 0)
         {
             loadbar.Value = 0;

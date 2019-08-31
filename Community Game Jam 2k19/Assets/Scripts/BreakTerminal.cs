@@ -3,6 +3,8 @@ using System;
 
 public class BreakTerminal : MonoBehaviour
 {
+    [SerializeField]
+    CmdPromptObject cmd;
     HealthController health;
     public Animator terminalAnimation;
     TerminalActivation activate;
@@ -18,5 +20,6 @@ public class BreakTerminal : MonoBehaviour
     {
         activate.isActivated = false;
         terminalAnimation.SetBool("IsDestroyed", true);
+        cmd.CmdSetText("Terminal Down!");
     }
 }

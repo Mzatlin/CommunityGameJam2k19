@@ -17,7 +17,7 @@ TagManager:
   - Terminal
   - Player
   - Enemy
-  - 
+  - Interruptions
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 1298259081
+    locked: 0
+  - name: Interruptions
+    uniqueID: 952201979
     locked: 0
   - name: Default
     uniqueID: 0

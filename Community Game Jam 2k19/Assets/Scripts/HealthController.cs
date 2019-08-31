@@ -12,10 +12,15 @@ public class HealthController : HealthBase
     private float currentHealth = 1f;
     [SerializeField]
     private bool isDead;
+    public float MaxHealth
+    {
+        get { return MaxHealth; }
+        set { maxHealth = value; }
+    }
     public float CurrentHealth
     {
         get { return currentHealth; }
-        private set { currentHealth = value; }
+        set { currentHealth = value; }
     }
     public bool IsDead
     {

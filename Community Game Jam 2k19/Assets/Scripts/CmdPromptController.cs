@@ -21,19 +21,21 @@ public class CmdPromptController : MonoBehaviour
 
     void HandleEnqueue()
     {
+        index = Mathf.Clamp(index, 0, 4);
 
-        if (index >= prompt.size)
+        if (index > prompt.size-1)
         {
-            var temp = cmdTextList[index - 1].text;
-            cmdTextList[index-1].text = prompt.textContent;
-            cmdTextList[index - 2].text = temp;
-            index = 0;
+         //   index=prompt.size-1;
+          //  var temp = cmdTextList[index - 1].text;
+            //cmdTextList[index-1].text = prompt.textContent;
+            //cmdTextList[index - 2].text = temp;
+            int tempindex = prompt.size-1;
 
-            for (int i = prompt.size - 2; i >= 0; i--)
+            for (int i = 0; i < prompt.size-1; i++)
             {
-                cmdTextList[index].text = cmdTextList[i].text;
-                index++;
+                cmdTextList[i].text = cmdTextList[i+1].text;
             }
+            cmdTextList[tempindex].text = prompt.textContent;
         }
         else
         {

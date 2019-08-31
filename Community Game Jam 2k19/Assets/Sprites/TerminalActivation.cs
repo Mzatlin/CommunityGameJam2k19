@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TerminalActivation : MonoBehaviour
 {
+    public CmdPromptObject cmd;
     public Animator terminalAnimator;
     public bool isActivated = false;
     public TerminalMinigame game;
@@ -24,11 +25,11 @@ public class TerminalActivation : MonoBehaviour
    void HandleCompletion()
     {
         terminalAnimator.SetBool("IsActivated", true);
-        loadValue.Value += .01f;
+        loadValue.Activate();
         health.IsDead = false;
         terminalAnimator.SetBool("IsDestroyed", false);
-        loadValue.isActive = true;
         minigameCanvas.enabled = false;
         isActivated = true;
+        cmd.CmdSetText("Terminal Activated");
     }
 }
