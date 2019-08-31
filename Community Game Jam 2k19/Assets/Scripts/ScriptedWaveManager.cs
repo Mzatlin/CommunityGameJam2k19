@@ -20,8 +20,8 @@ public class ScriptedWaveManager : MonoBehaviour
     {
         interrupt.difficulty = 3;
         interrupt.speed = 3;
-        enemyWave.difficulty = 3;
-        enemyWave.enemySpeed = 3;
+        enemyWave.difficulty = 2;
+        enemyWave.enemySpeed = 2;
 
     }
 
@@ -36,7 +36,7 @@ public class ScriptedWaveManager : MonoBehaviour
                 firstEnemy.SetActive(true);
                 firstEnemy.transform.position = spawnpoint.transform.position;
                 enemy.SetActive(true);
-                prompt.CmdSetText("Glitches Detected. Defend The Console");
+                prompt.CmdSetText("Glitches Detected. Defend The Terminal");
                 messagecount++;
             }
         }
