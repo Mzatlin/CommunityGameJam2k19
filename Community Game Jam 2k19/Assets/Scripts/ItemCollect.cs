@@ -7,6 +7,8 @@ public class ItemCollect : MonoBehaviour
 {
     public event Action OnCollected = delegate { };
     PlayerInputController player;
+    public AudioSource source;
+    public AudioClip clip;
 
     void OnTriggerEnter2D(Collider2D collision)
     {

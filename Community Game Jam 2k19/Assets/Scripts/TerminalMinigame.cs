@@ -18,6 +18,9 @@ public class TerminalMinigame : MonoBehaviour
     PlayerObject player;
     TerminalReceiveInteraction terminal;
     bool isComplete = false;
+    public AudioSource source;
+    public AudioClip clip;
+    public AudioClip clip2;
     public float count = 0; 
     // Start is called before the first frame update
     void Awake()
@@ -37,6 +40,8 @@ public class TerminalMinigame : MonoBehaviour
         player.isHacking = true;
         isComplete = false;
         count = 0;
+        source.clip = clip;
+        source.Play();
     }
     void HandleLeave()
     {
@@ -55,6 +60,8 @@ public class TerminalMinigame : MonoBehaviour
             {
                 count++;
                 pressedKey.enabled = true;
+                source.clip = clip2;
+                source.Play();
             }
             if (Input.GetKeyUp(KeyCode.E))
             {

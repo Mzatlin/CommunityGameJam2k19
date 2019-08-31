@@ -10,6 +10,8 @@ public class TerminalActivation : MonoBehaviour
     public TerminalMinigame game;
     HealthController health;
     public LoadingBarValue loadValue;
+    public AudioSource audio;
+    public AudioClip clip;
     [SerializeField]
     Canvas minigameCanvas;
 
@@ -31,5 +33,7 @@ public class TerminalActivation : MonoBehaviour
         minigameCanvas.enabled = false;
         isActivated = true;
         cmd.CmdSetText("Terminal Activated");
+        audio.clip = clip;
+        audio.Play();
     }
 }

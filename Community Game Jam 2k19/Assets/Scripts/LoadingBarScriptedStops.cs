@@ -53,7 +53,12 @@ public class LoadingBarScriptedStops : MonoBehaviour
         playerobject.isStopped = false;
         playerobject.isHacking = false;
         playerobject.isDead = false;
-
+        yield return new WaitForSeconds(2f);
+        prompt.CmdSetText("Use the E-Key To Attack");
+        prompt.CmdSetText("Spacebar to Jump");
+        prompt.CmdSetText("And the S-Key to Reactivate the Terminal");
+        yield return new WaitForSeconds(7f);
+        prompt.CmdSetText("Please Activate the Power-Terminal");
         terminal.SetActive(true);
     }
 }

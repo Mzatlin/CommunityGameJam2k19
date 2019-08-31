@@ -7,6 +7,8 @@ public class BreakTerminal : MonoBehaviour
     CmdPromptObject cmd;
     HealthController health;
     public Animator terminalAnimation;
+    public AudioSource source;
+    public AudioClip clip;
     TerminalActivation activate;
     // Start is called before the first frame update
     void Start()
@@ -18,8 +20,10 @@ public class BreakTerminal : MonoBehaviour
 
     void HandleDeath()
     {
+        source.clip = clip;
+        source.Play();
         activate.isActivated = false;
         terminalAnimation.SetBool("IsDestroyed", true);
-        cmd.CmdSetText("Terminal Down!");
+        cmd.CmdSetText("Terminal Damaged.");
     }
 }

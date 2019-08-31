@@ -43,28 +43,30 @@ public class ScriptedWaveManager : MonoBehaviour
 
         if (!collectInterruption.activeInHierarchy && (load.Value >= .30 || load.Value >= .50))
         {
-                interrupt.difficulty++;        
-                collectInterruption.SetActive(true);
+            if (interrupt.difficulty < 5)
+            {
+                interrupt.difficulty++;
+            }
+            collectInterruption.SetActive(true);
 
         }
         if (!collectInterruption.activeInHierarchy && (load.Value >= .60 || load.Value >= .70 || load.Value >= .80))
         {
-            interrupt.difficulty++;
-            if(interrupt.difficulty > 5)
+          
+            if(interrupt.difficulty < 5 )
             {
-                interrupt.difficulty = 5;
+                interrupt.difficulty++;
             }
-            enemyWave.enemySpeed--;
-            enemyWave.difficulty--;
-            if(enemyWave.difficulty < 1)
+            if(enemyWave.enemySpeed > 1)
             {
-                enemyWave.difficulty = 1;
+                enemyWave.enemySpeed--;
             }
-            if(enemyWave.enemySpeed < 1)
+            if (enemyWave.difficulty > 1)
             {
-                enemyWave.enemySpeed = 1;
+                enemyWave.difficulty--;
             }
-            
+      
+
             collectInterruption.SetActive(true);
 
         }

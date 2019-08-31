@@ -15,6 +15,10 @@ public class CollectableSpawner : SpawnerBase
     ItemCollect collect;
     [SerializeField]
     float objectCount = 0;
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    AudioClip clip;
     // Start is called before the first frame update
 
  
@@ -47,7 +51,7 @@ public class CollectableSpawner : SpawnerBase
             {
                 load.isSlow = false;
                 load.tickRate = 0.0005f;
-                cmd.CmdSetText("Garbage Clear!");
+                cmd.CmdSetText("Garbage Has Been Cleared");
                 load.Activate();
                 isActive = false;
                 gameObject.SetActive(false);
@@ -79,7 +83,7 @@ public class CollectableSpawner : SpawnerBase
             }
         }
 
-        cmd.CmdSetText("Garbage is Slowing Us Down!");
+        cmd.CmdSetText("Low-Performant Garbage Detected");
 
     }
     //0.0001f for the "slowdown" effect
@@ -118,6 +122,8 @@ public class CollectableSpawner : SpawnerBase
 
     void HandleCollect()
     {
+        source.clip = clip;
+        source.Play();
         objectCount--;
     }
 
